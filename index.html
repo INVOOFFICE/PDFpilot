@@ -2,6 +2,15 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
+    <!-- Early language detection — runs before CSS paint to avoid flash -->
+    <script>
+        (function(){
+            var p = new URLSearchParams(location.search).get('lang');
+            if (p === 'fr') document.documentElement.lang = 'fr';
+            // Note: localStorage check intentionally omitted here (bots don't run this)
+            // Full logic runs after DOMContentLoaded in the footer script
+        })();
+    </script>
     <!-- ============================================================
          VIEWPORT & THEME
     ============================================================ -->
@@ -635,8 +644,8 @@
                 Gratuit &amp; respectueux de la vie privée — sans inscription
             </div>
 
-            <h1 id="hero-title-en" data-lang="en">PDF Pilot</h1>
-            <div id="hero-title-fr" data-lang="fr" style="font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:20px;background:linear-gradient(135deg,#fff 0%,#94a3b8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">PDF Pilot</div>
+            <h1 id="hero-title-en" data-lang="en">PDF Pilot — Free Online PDF Converter &amp; Toolkit</h1>
+            <div id="hero-title-fr" data-lang="fr" style="font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:20px;background:linear-gradient(135deg,#fff 0%,#94a3b8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">PDF Pilot — Convertisseur PDF Gratuit en Ligne</div>
 
             <p class="subtitle" data-lang="en">
                 Convert PDF to Word, Excel, or CSV. Merge, split, compress, and OCR your PDFs in seconds.
@@ -661,76 +670,76 @@
         <!-- Features / Tools -->
         <section class="features" id="tools" aria-labelledby="section-title-en section-title-fr">
             <h2 id="section-title-en" class="section-title" data-lang="en">10 Free PDF Tools. One Platform.</h2>
-            <h2 id="section-title-fr" class="section-title" data-lang="fr">10 Outils PDF Gratuits. Une Seule Plateforme.</h2>
+            <div id="section-title-fr" class="section-title" data-lang="fr" style="text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:48px;">10 Outils PDF Gratuits. Une Seule Plateforme.</div>
 
             <div class="grid" role="list">
                 <article class="card" id="tool-pdf-to-word" role="listitem" aria-label="PDF to Word converter">
                     <div class="card-icon" aria-hidden="true">📄</div>
                     <h3 data-lang="en">PDF to Word Converter</h3>
-                    <h3 data-lang="fr">PDF → Word</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">PDF → Word</div>
                     <p data-lang="en">Convert any PDF to editable .docx Word documents with perfect layout and formatting preserved.</p>
                     <p data-lang="fr">Convertissez vos PDF en .docx modifiables avec une mise en forme parfaite.</p>
                 </article>
                 <article class="card" id="tool-pdf-to-excel" role="listitem" aria-label="PDF to Excel converter">
                     <div class="card-icon" aria-hidden="true">📊</div>
                     <h3 data-lang="en">PDF to Excel Converter</h3>
-                    <h3 data-lang="fr">PDF → Excel</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">PDF → Excel</div>
                     <p data-lang="en">Extract tables and data from PDFs into clean, structured .xlsx spreadsheets ready for analysis.</p>
                     <p data-lang="fr">Extrayez les tableaux dans des feuilles .xlsx propres.</p>
                 </article>
                 <article class="card" role="listitem" aria-label="PDF to CSV exporter">
                     <div class="card-icon" aria-hidden="true">📋</div>
                     <h3 data-lang="en">PDF to CSV Export</h3>
-                    <h3 data-lang="fr">PDF → CSV</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">PDF → CSV</div>
                     <p data-lang="en">Export structured data and tables from PDFs to CSV format instantly, ready for any spreadsheet or database.</p>
                     <p data-lang="fr">Exportez vos données structurées en CSV instantanément.</p>
                 </article>
                 <article class="card" role="listitem" aria-label="PDF to text extractor">
                     <div class="card-icon" aria-hidden="true">📝</div>
                     <h3 data-lang="en">PDF to Text Extractor</h3>
-                    <h3 data-lang="fr">PDF → Texte</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">PDF → Texte</div>
                     <p data-lang="en">Extract plain text from any PDF document in one click, perfect for quick copy-paste or data processing.</p>
                     <p data-lang="fr">Extrayez le texte brut de n'importe quel PDF en un clic.</p>
                 </article>
                 <article class="card" id="tool-merge" role="listitem" aria-label="Merge PDFs tool">
                     <div class="card-icon" aria-hidden="true">🔗</div>
                     <h3 data-lang="en">Merge PDFs</h3>
-                    <h3 data-lang="fr">Fusionner PDFs</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Fusionner PDFs</div>
                     <p data-lang="en">Combine multiple PDF files into a single document instantly. Free PDF merge with no file size limits.</p>
                     <p data-lang="fr">Combinez plusieurs PDFs en un seul document.</p>
                 </article>
                 <article class="card" id="tool-split" role="listitem" aria-label="Split PDF tool">
                     <div class="card-icon" aria-hidden="true">✂️</div>
                     <h3 data-lang="en">Split PDF</h3>
-                    <h3 data-lang="fr">Diviser PDF</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Diviser PDF</div>
                     <p data-lang="en">Split large PDFs by page range or extract individual pages into separate files in seconds.</p>
                     <p data-lang="fr">Divisez par plage de pages ou extrayez des pages individuelles.</p>
                 </article>
                 <article class="card" id="tool-compress" role="listitem" aria-label="Compress PDF tool">
                     <div class="card-icon" aria-hidden="true">🗜️</div>
                     <h3 data-lang="en">Compress PDF</h3>
-                    <h3 data-lang="fr">Compresser PDF</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Compresser PDF</div>
                     <p data-lang="en">Reduce PDF file size dramatically without losing visual quality. Ideal for email attachments and storage.</p>
                     <p data-lang="fr">Réduisez la taille du fichier sans perdre en qualité.</p>
                 </article>
                 <article class="card" role="listitem" aria-label="Extract tables from PDF">
                     <div class="card-icon" aria-hidden="true">📐</div>
                     <h3 data-lang="en">Extract Tables from PDF</h3>
-                    <h3 data-lang="fr">Extraire Tableaux</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Extraire Tableaux</div>
                     <p data-lang="en">Auto-detect and export every table in your PDF to Excel or CSV format in one click.</p>
                     <p data-lang="fr">Détectez et exportez automatiquement chaque tableau de votre PDF.</p>
                 </article>
                 <article class="card" id="tool-ocr" role="listitem" aria-label="OCR PDF scanner">
                     <div class="card-icon" aria-hidden="true">🔍</div>
                     <h3 data-lang="en">OCR PDF Scanner</h3>
-                    <h3 data-lang="fr">Scanner OCR</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Scanner OCR</div>
                     <p data-lang="en">Extract and search text from scanned PDF documents and images using optical character recognition (OCR).</p>
                     <p data-lang="fr">Extrayez le texte de documents scannés et d'images.</p>
                 </article>
                 <article class="card" role="listitem" aria-label="Batch PDF processor">
                     <div class="card-icon" aria-hidden="true">⚡</div>
                     <h3 data-lang="en">Batch PDF Processing</h3>
-                    <h3 data-lang="fr">Traitement par Lot</h3>
+                    <div data-lang="fr" style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">Traitement par Lot</div>
                     <p data-lang="en">Convert or process multiple PDFs at once. Save hours with bulk PDF operations for teams and professionals.</p>
                     <p data-lang="fr">Convertissez plusieurs PDFs en une seule fois, gagnez des heures.</p>
                 </article>
@@ -764,26 +773,38 @@
             document.documentElement.lang = lang;
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
-            // Update canonical link for hreflang signal
+            // Update canonical + URL param (crawlable, shareable)
             const canonical = document.querySelector('link[rel="canonical"]');
-            if (canonical) {
-                canonical.href = lang === 'fr'
-                    ? 'https://pdfpilot.online/?lang=fr'
-                    : 'https://pdfpilot.online/';
+            if (lang === 'fr') {
+                if (canonical) canonical.href = 'https://pdfpilot.online/?lang=fr';
+                history.replaceState(null, '', '?lang=fr');
+            } else {
+                if (canonical) canonical.href = 'https://pdfpilot.online/';
+                history.replaceState(null, '', '/');
             }
-            // Persist user language preference
+            // Also persist for convenience (secondary fallback only)
             try { localStorage.setItem('pdfpilot_lang', lang); } catch(e) {}
         }
-        // Restore language on load
-        try {
-            const saved = localStorage.getItem('pdfpilot_lang');
-            if (saved && saved !== document.documentElement.lang) {
-                document.documentElement.lang = saved;
-                document.querySelectorAll('.lang-btn').forEach(btn => {
-                    btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === saved);
+
+        // Language detection priority:
+        // 1. URL param ?lang= (crawlable, shareable, canonical)
+        // 2. localStorage (returning user convenience)
+        // 3. Default: "en" (HTML default — correct for crawlers)
+        (function() {
+            var urlLang = new URLSearchParams(location.search).get('lang');
+            var stored;
+            try { stored = localStorage.getItem('pdfpilot_lang'); } catch(e) {}
+            var lang = (urlLang === 'fr' || urlLang === 'en') ? urlLang
+                     : (stored === 'fr' || stored === 'en') ? stored
+                     : 'en';
+
+            if (lang !== 'en') {
+                document.documentElement.lang = lang;
+                document.querySelectorAll('.lang-btn').forEach(function(btn) {
+                    btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === lang);
                 });
             }
-        } catch(e) {}
+        })();
     </script>
 </body>
 </html>

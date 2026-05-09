@@ -14,7 +14,7 @@
          PRIMARY META
     ============================================================ -->
     <title>PDF Pilot — Free Online PDF Converter, Merge, Split & OCR Tools</title>
-    <meta name="description" content="Free, fast, privacy-first PDF toolkit. Convert PDF to Word, Excel, CSV, merge PDFs, split PDFs, compress, OCR scanned documents, and extract tables — all in your browser. No signup. No uploads to servers.">
+    <meta name="description" content="Free PDF toolkit: convert to Word, Excel, CSV, merge, split, compress &amp; OCR — all in your browser. No signup. No server uploads. 100% private.">
     <meta name="keywords" content="pdf converter, free pdf converter, pdf to word, pdf to excel, pdf to csv, merge pdf, split pdf, compress pdf, ocr pdf, extract tables from pdf, online pdf tools, secure pdf converter, private pdf tools, pdf toolkit, pdf editor online, pdf merge free, pdf split online, batch pdf converter">
     <meta name="author" content="PDF Pilot">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -31,6 +31,12 @@
          CANONICAL & HREFLANG
     ============================================================ -->
     <link rel="canonical" href="https://pdfpilot.online/">
+    <script>
+        // Redirect www to non-www client-side (server-side 301 is preferred — see SEO guide)
+        if (location.hostname === 'www.pdfpilot.online') {
+            location.replace('https://pdfpilot.online' + location.pathname + location.search);
+        }
+    </script>
     <link rel="alternate" hreflang="en" href="https://pdfpilot.online/">
     <link rel="alternate" hreflang="fr" href="https://pdfpilot.online/?lang=fr">
     <link rel="alternate" hreflang="x-default" href="https://pdfpilot.online/">
@@ -630,7 +636,7 @@
             </div>
 
             <h1 id="hero-title-en" data-lang="en">PDF Pilot</h1>
-            <h1 id="hero-title-fr" data-lang="fr">PDF Pilot</h1>
+            <div id="hero-title-fr" data-lang="fr" style="font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:20px;background:linear-gradient(135deg,#fff 0%,#94a3b8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">PDF Pilot</div>
 
             <p class="subtitle" data-lang="en">
                 Convert PDF to Word, Excel, or CSV. Merge, split, compress, and OCR your PDFs in seconds.
@@ -658,14 +664,14 @@
             <h2 id="section-title-fr" class="section-title" data-lang="fr">10 Outils PDF Gratuits. Une Seule Plateforme.</h2>
 
             <div class="grid" role="list">
-                <article class="card" role="listitem" aria-label="PDF to Word converter">
+                <article class="card" id="tool-pdf-to-word" role="listitem" aria-label="PDF to Word converter">
                     <div class="card-icon" aria-hidden="true">📄</div>
                     <h3 data-lang="en">PDF to Word Converter</h3>
                     <h3 data-lang="fr">PDF → Word</h3>
                     <p data-lang="en">Convert any PDF to editable .docx Word documents with perfect layout and formatting preserved.</p>
                     <p data-lang="fr">Convertissez vos PDF en .docx modifiables avec une mise en forme parfaite.</p>
                 </article>
-                <article class="card" role="listitem" aria-label="PDF to Excel converter">
+                <article class="card" id="tool-pdf-to-excel" role="listitem" aria-label="PDF to Excel converter">
                     <div class="card-icon" aria-hidden="true">📊</div>
                     <h3 data-lang="en">PDF to Excel Converter</h3>
                     <h3 data-lang="fr">PDF → Excel</h3>
@@ -686,21 +692,21 @@
                     <p data-lang="en">Extract plain text from any PDF document in one click, perfect for quick copy-paste or data processing.</p>
                     <p data-lang="fr">Extrayez le texte brut de n'importe quel PDF en un clic.</p>
                 </article>
-                <article class="card" role="listitem" aria-label="Merge PDFs tool">
+                <article class="card" id="tool-merge" role="listitem" aria-label="Merge PDFs tool">
                     <div class="card-icon" aria-hidden="true">🔗</div>
                     <h3 data-lang="en">Merge PDFs</h3>
                     <h3 data-lang="fr">Fusionner PDFs</h3>
                     <p data-lang="en">Combine multiple PDF files into a single document instantly. Free PDF merge with no file size limits.</p>
                     <p data-lang="fr">Combinez plusieurs PDFs en un seul document.</p>
                 </article>
-                <article class="card" role="listitem" aria-label="Split PDF tool">
+                <article class="card" id="tool-split" role="listitem" aria-label="Split PDF tool">
                     <div class="card-icon" aria-hidden="true">✂️</div>
                     <h3 data-lang="en">Split PDF</h3>
                     <h3 data-lang="fr">Diviser PDF</h3>
                     <p data-lang="en">Split large PDFs by page range or extract individual pages into separate files in seconds.</p>
                     <p data-lang="fr">Divisez par plage de pages ou extrayez des pages individuelles.</p>
                 </article>
-                <article class="card" role="listitem" aria-label="Compress PDF tool">
+                <article class="card" id="tool-compress" role="listitem" aria-label="Compress PDF tool">
                     <div class="card-icon" aria-hidden="true">🗜️</div>
                     <h3 data-lang="en">Compress PDF</h3>
                     <h3 data-lang="fr">Compresser PDF</h3>
@@ -714,7 +720,7 @@
                     <p data-lang="en">Auto-detect and export every table in your PDF to Excel or CSV format in one click.</p>
                     <p data-lang="fr">Détectez et exportez automatiquement chaque tableau de votre PDF.</p>
                 </article>
-                <article class="card" role="listitem" aria-label="OCR PDF scanner">
+                <article class="card" id="tool-ocr" role="listitem" aria-label="OCR PDF scanner">
                     <div class="card-icon" aria-hidden="true">🔍</div>
                     <h3 data-lang="en">OCR PDF Scanner</h3>
                     <h3 data-lang="fr">Scanner OCR</h3>
@@ -733,6 +739,15 @@
 
         <!-- Footer -->
         <footer class="footer">
+            <nav aria-label="Site links" style="margin-bottom:16px; display:flex; flex-wrap:wrap; justify-content:center; gap:12px 24px; font-size:13px;">
+                <a href="#tools" style="color:var(--primary)">All PDF Tools</a>
+                <a href="#tool-pdf-to-word" style="color:var(--primary)">PDF to Word</a>
+                <a href="#tool-pdf-to-excel" style="color:var(--primary)">PDF to Excel</a>
+                <a href="#tool-merge" style="color:var(--primary)">Merge PDFs</a>
+                <a href="#tool-ocr" style="color:var(--primary)">OCR Scanner</a>
+                <a href="#tool-compress" style="color:var(--primary)">Compress PDF</a>
+                <a href="#tool-split" style="color:var(--primary)">Split PDF</a>
+            </nav>
             <p data-lang="en">
                 Open source on <a href="https://github.com/INVOOFFICE/pdf-converter" target="_blank" rel="noopener noreferrer" aria-label="PDF Pilot on GitHub">GitHub</a> · Built with Python &amp; Streamlit
             </p>

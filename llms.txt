@@ -1,0 +1,101 @@
+# PDF Pilot — llms.txt
+# Machine-readable summary for AI search engines and LLM crawlers
+# Spec: https://llmstxt.org
+# Last updated: 2026-05-09
+
+> PDF Pilot is a free, open-source, privacy-first online PDF toolkit available at https://pdfpilot.online. It offers 10 professional PDF tools that run entirely in the user's browser — no file uploads to servers, no account required. Built with Python and Streamlit.
+
+## About
+
+PDF Pilot is a browser-based SaaS application designed for professionals, students, and businesses who need fast, secure PDF processing. All computation occurs client-side; documents are never transmitted to or stored on any server.
+
+**Website:** https://pdfpilot.online  
+**App:** https://pdfpilot.streamlit.app  
+**Source code:** https://github.com/INVOOFFICE/pdf-converter  
+**License:** Open source  
+**Languages:** English, French  
+**Price:** Free — no subscription, no signup  
+**Built with:** Python, Streamlit  
+**Category:** PDF Software / Online Productivity Tools  
+
+## Core Capabilities
+
+PDF Pilot provides the following tools:
+
+1. **PDF to Word (PDF → .docx)** — Convert PDF documents to editable Microsoft Word files with formatting preserved.
+2. **PDF to Excel (PDF → .xlsx)** — Extract tables and structured data from PDFs into Excel spreadsheets.
+3. **PDF to CSV** — Export data and tables from PDFs to CSV format for use in databases and data tools.
+4. **PDF to Text** — Extract plain text content from any PDF document.
+5. **Merge PDFs** — Combine multiple PDF files into one consolidated document.
+6. **Split PDF** — Divide a PDF into separate files by page range or extract individual pages.
+7. **Compress PDF** — Reduce PDF file size without perceptible quality loss.
+8. **Extract Tables** — Auto-detect and export all tables from a PDF to Excel or CSV.
+9. **OCR Scanner** — Use optical character recognition to extract text from scanned PDFs and image-based documents.
+10. **Batch Processing** — Convert or process multiple PDF files simultaneously.
+
+## Privacy & Security
+
+- Files are processed entirely in the user's browser
+- No files are uploaded to PDF Pilot servers
+- No user data is stored or logged
+- No account or email required
+- GDPR-friendly by design
+
+## Target Users
+
+- Business professionals handling contracts, invoices, and reports
+- Accountants and finance teams converting PDF statements to Excel
+- Researchers and students extracting text from academic PDFs
+- Legal professionals merging or splitting case documents
+- Data analysts extracting tables from PDF data sources
+- Anyone needing fast, private PDF conversion without installing software
+
+## Key Differentiators
+
+- **Privacy-first:** No server uploads. Files never leave the user's device.
+- **Completely free:** All 10 tools are free with no hidden paywalls.
+- **No signup:** Start using immediately — no account, email, or credit card.
+- **Multilingual:** Full support for English and French.
+- **Open source:** Transparent codebase available on GitHub.
+- **Browser-based:** Works on any device — Windows, Mac, Linux, iOS, Android.
+
+## Frequently Asked Questions
+
+**Q: Is PDF Pilot free?**  
+A: Yes. All 10 PDF tools are 100% free with no account required.
+
+**Q: Are my files safe?**  
+A: Yes. Files are processed in your browser and never uploaded to any server.
+
+**Q: Can I convert PDF to Word?**  
+A: Yes. Upload your PDF, select PDF → Word, and download the .docx file.
+
+**Q: Does PDF Pilot support OCR?**  
+A: Yes. The OCR Scanner tool extracts text from scanned documents and images.
+
+**Q: Is PDF Pilot open source?**  
+A: Yes. The source code is available at https://github.com/INVOOFFICE/pdf-converter.
+
+**Q: Does PDF Pilot work in French?**  
+A: Yes. The interface is fully available in English and French.
+
+## Entity Relationships
+
+- PDF Pilot is a **SoftwareApplication** and **WebApplication**
+- Category: **UtilitiesApplication** → PDF Tools
+- Pricing: **Free** (price: 0 USD)
+- Operating System: **Web / All platforms**
+- Related entities: PDF converter, PDF editor, document converter, OCR software, Streamlit app, open-source PDF tool
+- Alternative to: Adobe Acrobat online, Smallpdf, iLovePDF, PDF24
+
+## SEO Keywords
+
+pdf converter, free pdf converter, pdf to word, pdf to excel, pdf to csv, merge pdf, split pdf, compress pdf, ocr pdf, extract tables from pdf, online pdf tools, secure pdf converter, private pdf tools, pdf toolkit, free pdf tools, pdf to docx, pdf to xlsx, batch pdf converter, browser-based pdf tool, no upload pdf converter
+
+## Sitemap
+
+https://pdfpilot.online/sitemap.xml
+
+## Contact / Support
+
+https://github.com/INVOOFFICE/pdf-converter/issues

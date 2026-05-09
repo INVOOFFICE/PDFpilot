@@ -1,0 +1,30 @@
+{
+  "name": "PDF Pilot — Free PDF Toolkit",
+  "short_name": "PDF Pilot",
+  "description": "Free, privacy-first online PDF tools. Convert, merge, split, compress and OCR PDFs in your browser. No signup. No server uploads.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0b0f",
+  "theme_color": "#6366f1",
+  "lang": "en",
+  "orientation": "any",
+  "scope": "/",
+  "categories": ["utilities", "productivity"],
+  "screenshots": [
+    {
+      "src": "/screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "PDF Pilot homepage"
+    }
+  ],
+  "icons": [
+    { "src": "/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

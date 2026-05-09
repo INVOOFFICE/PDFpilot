@@ -1,0 +1,130 @@
+# robots.txt — PDF Pilot (https://pdfpilot.online)
+# Generated for enterprise SEO — 2026
+
+# ──────────────────────────────────────────────
+# ALLOW ALL CRAWLERS (site is fully public)
+# ──────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.streamlit/
+Disallow: /*?session=
+Disallow: /*?token=
+Crawl-delay: 1
+
+# ──────────────────────────────────────────────
+# MAJOR SEARCH ENGINES — NO DELAY
+# ──────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# ──────────────────────────────────────────────
+# AI CRAWLERS — EXPLICITLY ALLOWED
+# ──────────────────────────────────────────────
+# OpenAI / ChatGPT Search
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google Gemini / AI Overview
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: bingbot
+Allow: /
+
+# Apple AI
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ──────────────────────────────────────────────
+# BLOCK BAD ACTORS
+# ──────────────────────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ──────────────────────────────────────────────
+# SITEMAP REFERENCES
+# ──────────────────────────────────────────────
+Sitemap: https://pdfpilot.online/sitemap.xml
+Sitemap: https://pdfpilot.online/sitemap-images.xml
+
+# ──────────────────────────────────────────────
+# HOST DECLARATION
+# ──────────────────────────────────────────────
+Host: https://pdfpilot.online
